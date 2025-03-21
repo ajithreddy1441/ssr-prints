@@ -6,7 +6,7 @@ import {
   GoogleAuthProvider,
   sendPasswordResetEmail, // Import sendPasswordResetEmail
 } from "firebase/auth";
-import { auth } from "../firebaseconfig";
+import { auth } from "../firebaseConfig";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");

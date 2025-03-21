@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ShoppingCart, Heart, User } from 'lucide-react'; // Import User icon
 import logo from '../assets/com-logo-removebg.png';
-import { auth } from '../firebaseconfig'; // Import auth from Firebase config
+import { auth } from '../firebaseConfig'; // Import auth from Firebase config
 import { signOut } from 'firebase/auth'; // Import signOut
 
 export default function Navbar({ cartCount, favoritesCount, onCartClick, onFavoritesClick }) {
@@ -43,7 +43,7 @@ export default function Navbar({ cartCount, favoritesCount, onCartClick, onFavor
           <input
             type="text"
             placeholder="Search Products"
-            className="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-xl focus:outline-none focus:border-black"
+            className="w-full pl-4 pr-10 py-2 text-white border border-gray-300 rounded-xl focus:outline-none focus:border-gray-500"
           />
           <Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
         </div>
